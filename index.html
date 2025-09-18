@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="代金垚 - 汽车仿真工程师，专注于车身耐久性能优化、CAE仿真分析、结构轻量化设计。展示专业技能和项目经验。" />
+    <meta name="keywords" content="汽车仿真,CAE分析,车身耐久,结构优化,轻量化设计,疲劳分析,车辆工程" />
+    <meta name="author" content="代金垚" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="代金垚 - 汽车仿真工程师" />
+    <meta property="og:description" content="专注于车身耐久性能优化、CAE仿真分析、结构轻量化设计的汽车仿真工程师。" />
+    <meta property="og:url" content="https://your-domain.com" />
+    <meta property="og:image" content="/avatar-preview.jpg" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="代金垚 - 汽车仿真工程师" />
+    <meta property="twitter:description" content="专注于车身耐久性能优化、CAE仿真分析、结构轻量化设计的汽车仿真工程师。" />
+    <meta property="twitter:image" content="/avatar-preview.jpg" />
+    
+    <title>代金垚 - 汽车仿真工程师 | 车辆工程专家</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #0a0a0a;
+        color: #ffffff;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+      }
+      
+      .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0a0a0a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      }
+      
+      .loading-text {
+        font-size: 2rem;
+        background: linear-gradient(45deg, #00d4ff, #8b5cf6, #ec4899);
+        background-size: 300% 300%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: gradient 3s ease infinite;
+      }
+      
+      @keyframes gradient {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      
+      .loading-bar {
+        position: absolute;
+        bottom: 20%;
+        width: 200px;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 1px;
+        overflow: hidden;
+      }
+      
+      .loading-progress {
+        height: 100%;
+        background: linear-gradient(90deg, #00d4ff, #8b5cf6);
+        width: 0%;
+        animation: loading 2s ease-in-out infinite;
+      }
+      
+      @keyframes loading {
+        0% { width: 0%; }
+        50% { width: 100%; }
+        100% { width: 0%; }
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-Di9KJ3lz.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-DtX1tuCI.js">
+    <link rel="modulepreload" crossorigin href="/assets/motion-vendor-DPAl1j6H.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-oqSZuFTj.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-D-WsoU3s.css">
+  </head>
+  <body>
+    <div id="loading-screen" class="loading-screen">
+      <div>
+        <div class="loading-text">初始化中...</div>
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+      </div>
+    </div>
+    <div id="root"></div>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          document.getElementById('loading-screen').style.opacity = '0';
+          document.getElementById('loading-screen').style.transition = 'opacity 0.5s ease';
+          setTimeout(function() {
+            document.getElementById('loading-screen').style.display = 'none';
+          }, 500);
+        }, 1500);
+      });
+    </script>
+  </body>
+</html>
