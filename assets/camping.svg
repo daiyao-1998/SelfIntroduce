@@ -1,0 +1,15 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="campingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#56ab2f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a8e6cf;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#campingGradient)" rx="20"/>
+  <polygon points="100,40 60,120 140,120" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  <rect x="85" y="120" width="30" height="40" fill="#654321"/>
+  <circle cx="40" cy="60" r="15" fill="#FFD700" opacity="0.8"/>
+  <path d="M 30 150 Q 50 140 70 150" stroke="#333" stroke-width="3" fill="none"/>
+  <path d="M 130 150 Q 150 140 170 150" stroke="#333" stroke-width="3" fill="none"/>
+  <text x="100" y="180" text-anchor="middle" font-size="18" fill="white" font-weight="bold">露营</text>
+</svg>

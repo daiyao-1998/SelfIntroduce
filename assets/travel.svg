@@ -1,0 +1,17 @@
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="travelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" fill="url(#travelGradient)" rx="20"/>
+  <rect x="40" y="60" width="120" height="80" fill="white" opacity="0.9" rx="10"/>
+  <circle cx="100" cy="100" r="20" fill="#f093fb"/>
+  <path d="M 80 100 L 100 80 L 120 100 L 100 120 Z" fill="#f5576c"/>
+  <rect x="150" y="70" width="30" height="60" fill="white" opacity="0.7" rx="5"/>
+  <circle cx="165" cy="85" r="3" fill="#333"/>
+  <circle cx="165" cy="100" r="3" fill="#333"/>
+  <circle cx="165" cy="115" r="3" fill="#333"/>
+  <text x="100" y="170" text-anchor="middle" font-size="18" fill="white" font-weight="bold">旅游</text>
+</svg>
