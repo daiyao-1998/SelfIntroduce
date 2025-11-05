@@ -120,7 +120,7 @@
     }
     
     .metric-value {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         font-weight: bold;
         color: #007bff;
         margin-bottom: 5px;
@@ -215,15 +215,130 @@
                     <div class="col-auto">
                         <div class="bg-opacity-20 rounded p-3">
                             <h6 class="mb-1">项目周期</h6>
-                            <p class="mb-0">2023-01 - 至今</p>
+                            <p class="mb-0">2024-01 - 至今</p>
                         </div>
                     </div>
-                    
-                    
-                    
                 </div>
             </div>
             
+        </div>
+    </div>
+
+    <!-- 模型优化案例 -->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-card">
+                    <div class="section-header">
+                        <h3 class="mb-0 text-black"><i class="bi bi-gear-fill me-2"></i>模型建模优化案例</h3>
+                    </div>
+                    <div class="section-body">
+                        <!-- 案例概述 -->
+                        <div class="row mb-4">
+                            <div class="col-12">
+                                <h4 class="text-primary">案例背景</h4>
+                                <p class="lead">针对某车型底盘结构进行建模优化，通过改进建模方法和参数设置，显著提升仿真精度和计算效率。</p>
+                            </div>
+                        </div>
+
+                        <!-- 优化前后对比 -->
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <div class="media-item">
+                                    <img src="../static/images/model_bulid_1.jpg" alt="优化前建模"  class="w-75 h-auto">
+                                    <div class="p-3 bg-light">
+                                        <h5 class="text-center text-black small">优化前建模</h5>
+                                        <p class="text-muted small text-center">传统建模方法，尾门与车身配接位置受力与实际不符</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="media-item">
+                                    <img src="../static/images/model_bulid_2.jpg" alt="优化后建模" class="w-75 h-auto">
+                                    <div class="p-3 bg-light">
+                                        <h5 class="text-center text-black small">优化后建模</h5>
+                                        <p class="text-muted small text-center">优化后建模，尾门建模精细化，模态与实际尾门模态更接近</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 优化细节 -->
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <h4 class="text-primary">优化细节</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="text-center">
+                                            <span class="text-black">优化前</span>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门建模方式</h5>
+                                            <p class="mb-0 text-black">质量点(质量+转动惯量)</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门与车身铰链链接</h5>
+                                            <p class="mb-0 text-black">RBE2刚性连接</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门与车身缓冲块接触</h5>
+                                            <p class="mb-0 text-black">无建模</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门与车身锁扣接触</h5>
+                                            <p class="mb-0 text-black">无建模</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="text-center">
+                                            <span class="text-black">优化后</span>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门建模方式</h5>
+                                            <p class="mb-0 text-black">采用网格建模替代质量点</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门与车身铰链链接</h5>
+                                            <p class="mb-0 text-black">释放螺栓转动自由度</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门与车身缓冲块接触</h5>
+                                            <p class="mb-0 text-black">通过弹簧单元模拟各向异性的橡胶接触刚度</p>
+                                        </div>
+                                        <div class="achievement-item">
+                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门与车身锁扣接触</h5>
+                                            <p class="mb-0 text-black">通过弹簧单元模拟接触两个方向的刚度</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 优化收益 -->
+                        <div class="row">
+                            <div class="col-12">
+                                <h4 class="text-primary">优化收益</h4>
+                                <div class="row text-center">
+                                    <div class="col-md-6">
+                                        <div class="metric-card">
+                                            <div class="metric-value">60%→92%</div>
+                                            <div class="metric-label">尾门模态精度提升</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="metric-card">
+                                            <div class="metric-value">耐久问题复现</div>
+                                            <div class="metric-label">复现车身尾门铰链处焊点开裂问题</div>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
