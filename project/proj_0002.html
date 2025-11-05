@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>实车问题攻坚与优化 - 问题解决项目</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+        }
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .achievement-item {
+            border-left: 4px solid #007bff;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        .media-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .media-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .media-item img, .media-item video {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .company-section {
+            margin-bottom: 60px;
+        }
+        .company-header {
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+        .stats-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+    
+    
+<style>
+.problem-solving-project {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+    color: white;
+}
+.problem-header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.solution-section {
+    background: white;
+    color: #333;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    flex-direction: row;
+}
+.problem-timeline {
+    position: relative;
+    padding: 2rem;
+    /* 设置边框颜色为黑色，同时设置阴影 */
+    border: 1px solid #000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* 设置圆角 */
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    margin: 1.5rem 0;
+    text-align: left;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    background: #ff6b6b;
+    border-radius: 50%;
+}
+.impact-badge {
+    background: #ff6b6b;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin: 0.25rem;
+    display: inline-block;
+}
+.solution-step {
+    background: #f8f9fa;
+    border-left: 4px solid #ff6b6b;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 0 10px 10px 0;
+}
+
+/* 优化时间线横向均匀排布 */
+.solution-section .row {
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.solution-section .col-xl-4,
+.solution-section .col-lg-5,
+.solution-section .col-md-10 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.problem-timeline {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.problem-timeline:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* 响应式横向填充优化 */
+@media (min-width: 1200px) {
+    .problem-timeline {
+        min-width: 350px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .problem-timeline {
+        min-width: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .problem-timeline {
+        min-width: 450px;
+    }
+}
+</style>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../">
+                <i class="bi bi-code-slash"></i> 个人项目展示
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">项目</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">关于</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">联系</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        
+<div class="problem-solving-project">
+    <!-- 问题概述 -->
+    <div class="problem-header">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="display-4 fw-bold">实车问题攻坚与优化</h1>
+                <p class="lead">理想汽车 · 2022-03 - 至今</p>
+                <p class="mb-3">精准复现并解决5项实车疲劳开裂问题、8项整车制造及4项售后质量相关问题，直接保障车型路试与量产稳定性。</p>
+                
+                <!-- 影响标签 -->
+                <div class="mb-3">
+                    <span class="impact-badge">路试耐久</span>
+                    <span class="impact-badge">实车制造</span>
+                    <span class="impact-badge">售后质量</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 问题分析时间线 -->
+    <div class="solution-section">
+        <div class="row justify-content-center g-4">
+            <div class="col-xl-4 col-lg-5 col-md-10 mb-4">
+                <div class="problem-timeline h-100 mx-2">
+                    <h3 class="text-center mb-4">路试耐久</h3>
+                    <div class="timeline-item">
+                        <h5>空调安装支架焊点开裂</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>轮罩钣金开裂</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>尾门铰链安装板焊点开裂</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>后围焊点开裂</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>轮罩加强板焊点开裂</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-10 mb-4">
+                <div class="problem-timeline h-100 mx-2">
+                    <h3 class="text-center mb-4">整车制造</h3>
+                    <div class="timeline-item">
+                        <h5>侧围烘烤变形</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>顶盖吸坑变形</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>地板踩踏变形</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>后保/后围安装间隙</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>螺栓打紧变形</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>底护板安装支架涉水变形</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>翼子板分缝不均匀</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>遮阳帘安装面差不均匀</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-5 col-md-10 mb-4">
+                <div class="problem-timeline h-100 mx-2">
+                    <h3 class="text-center mb-4">售后质量</h3>
+                    <div class="timeline-item">
+                        <h5>顶棚拉手松旷</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>C柱异响</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>上板车吸能盒短板开裂</h5>
+                    </div>
+                    <div class="timeline-item">
+                        <h5>行李箱安装支架开裂</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- <h5>个人项目展示</h5>
+                    <p>展示我的专业项目经历和技术成就</p> -->
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-github"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>&copy; 2024 个人项目展示. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+<script>
+$(document).ready(function() {
+    // 时间线动画效果
+    $('.timeline-item').each(function(index) {
+        $(this).delay(200 * index).fadeIn(500);
+    });
+    
+    // 解决方案步骤悬停效果
+    $('.solution-step').hover(function() {
+        $(this).css('transform', 'translateX(10px)');
+        $(this).css('box-shadow', '0 15px 30px rgba(255,107,107,0.3)');
+    }, function() {
+        $(this).css('transform', 'translateX(0)');
+        $(this).css('box-shadow', 'none');
+    });
+});
+</script>
+
+</body>
+</html>
