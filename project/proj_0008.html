@@ -6,9 +6,9 @@
     <title>仿真自动化平台开发 - 自动化工具项目</title>
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../static/css/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
         .hero-section {
@@ -119,8 +119,9 @@
 .workflow-diagram {
     background: #f8f9fa;
     border-radius: 10px;
-    padding: 2rem;
+    /* padding: 2rem; */
     margin: 1rem 5rem;
+    border: 3px solid #dee2e6;
 }
 .workflow-step {
     display: flex;
@@ -163,13 +164,13 @@
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     /* 让视频在父元素中居中 */
-    margin: 3rem auto;
+    margin: 3rem 1rem auto;
 }
 
 /* 视频说明文字样式 */
 .video-caption {
     text-align: center;
-    margin-top: 0.8rem;
+    /* margin-top: 0.8rem; */
     font-size: 0.9rem;
     color: #666;
     font-weight: 500;
@@ -281,7 +282,7 @@
     <div class="tool-section">
         <h3>功能展示</h3>
         <div class="row">
-            <div class="workflow-diagram col-md-3">
+            <div class="workflow-diagram col-12 col-md-3 col-lg-3">
                 <div class="workflow-step">
                     <div class="step-number">1</div>
                     <div>
@@ -294,7 +295,7 @@
             </div>
 
 
-            <div class="workflow-diagram col-md-3">
+            <div class="workflow-diagram col-12 col-md-3 col-lg-3">
                 <div class="workflow-step">
                     <div class="step-number">2</div>
                     <div>
@@ -306,7 +307,7 @@
                 <p class="video-caption">前处理操作演示视频</p>
             </div>
 
-            <div class="workflow-diagram col-md-3">
+            <div class="workflow-diagram col-12 col-md-3 col-lg-3">
                 <div class="workflow-step">
                     <div class="step-number">3</div>
                     <div>
@@ -353,10 +354,10 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/jquery-3.6.0.min.js"></script>
     
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
     
     
 <script>

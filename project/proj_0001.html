@@ -6,9 +6,9 @@
     <title>纯电车型车身耐久仿真 - 技术仿真项目</title>
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="../static/css/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
         .hero-section {
@@ -436,235 +436,235 @@
     </div>
 
     <!-- 分析工况 - 使用Bootstrap栅格 -->
-    <div class="row g-4">
-        
-        <div class="row g-4">
-            <!-- 车身配接性能 -->
-            <div class="col-12 col-lg-3 col-xl-3">
-                <div class="scenario-category">
-                    <h4 class="text-center text-dark mb-3">车身配接性能</h4>
-                    <div class="circular-container">
-                        <div class="center-item">
-                            <div class="card text-center circular-card">
-                                <div class="card-body">
-                                    <i class="fas fa-car fs-1 text-primary"></i>
-                                    <h5 class="card-title">车身配接</h5>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- 轨道元素 - 数学环形分布 -->
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="开闭件配接">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-microchip fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_3.jpg" alt="开闭件配接" class="img-fluid rounded" style="object-fit: cover;">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="底盘配接">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-cogs fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_4.jpg" alt="底盘硬点配接" class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="内外饰配接">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-chair fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_5.jpg" alt="座椅配接" class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="座椅配接">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-paint-brush fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_6.jpg" alt="座椅配接" class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="电器配接">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-tools fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_7.jpg" alt="车身结构" class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-      
-            <!-- 整体性能 -->
-            <div class="col-12 col-lg-3 col-xl-3">
-                <div class="scenario-category">
-                    <h4 class="text-center text-dark mb-3">整体性能</h4>
-                    <div class="circular-container">
-                        <div class="center-item">
-                            <div class="card text-center circular-card">
-                                <div class="card-body">
-                                    <i class="fas fa-tachometer-alt fs-1 text-primary"></i>
-                                    <h5 class="card-title">整体性能</h5>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- 轨道元素 -->
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="车身弯曲刚度">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-arrows-alt-v fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_9.gif" alt="车身弯曲刚度" class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="车身扭转刚度">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-sync-alt fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_8.gif" alt="车身扭转刚度" class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="车身静强度">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-shield-alt fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_11.gif" alt="车身静强度" class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="车身疲劳损伤">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-chart-line fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_10.gif" alt="车身疲劳损伤" class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 用户感知性能 -->
-            <div class="col-12 col-lg-3 col-xl-3">
-                <div class="scenario-category">
-                    <h4 class="text-center text-dark mb-3">用户感知性能</h4>
-                    <div class="circular-container">
-                        <div class="center-item">
-                            <div class="card text-center circular-card">
-                                <div class="card-body">
-                                    <i class="fas fa-cogs fs-1 text-primary"></i>
-                                    <h5 class="card-title">用户感知</h5>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- 轨道元素 -->
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="外覆盖件抗凹">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-volume-up fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_12.png" alt="外覆盖件抗凹" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="顶棚拉手">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-hand-paper fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_13.png" alt="操作便利性" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
-                                </div>
-                            </div>
-                        </div>            
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="制动踏板">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-thermometer-half fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_14.png" alt="热舒适性" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 用户使用性能 -->
-            <div class="col-12 col-lg-3 col-xl-3">
-                <div class="scenario-category">
-                    <h4 class="text-center text-dark mb-3">用户使用性能</h4>
-                    <div class="circular-container">
-                        <div class="center-item">
-                            <div class="card text-center circular-card">
-                                <div class="card-body">
-                                    <i class="fas fa-user-cog fs-1 text-primary"></i>
-                                    <h5 class="card-title">用户使用</h5>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- 轨道元素 -->
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="举升强度">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-tools fs-4 text-primary"></i>
-                                    <img src="../static/images/durability_simulation_15.jpg" alt="举升强度" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="千斤顶顶升">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-weight-hanging icon-medium" style="color: #667eea;"></i>
-                                    <img src="../static/images/durability_simulation_18.png" alt="千斤顶顶升" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="行李架">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-luggage-cart icon-medium" style="color: #667eea;"></i>
-                                    <img src="../static/images/durability_simulation_16.png" alt="行李架" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="牵引装置">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-link icon-medium" style="color: #667eea;"></i>
-                                    <img src="../static/images/durability_simulation_19.png" alt="牵引装置" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="orbit-item">
-                            <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="拖车装置">
-                                <div class="card-body text-center">
-                                    <i class="fas fa-trailer icon-medium" style="color: #667eea;"></i>
-                                    <img src="../static/images/durability_simulation_17.png" alt="拖车装置" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
-                                </div>
-                            </div>
-                        </div>
-                        
 
+        
+    <div class="row g-4">
+        <!-- 车身配接性能 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="scenario-category">
+                <h4 class="text-center text-dark mb-3">车身配接性能</h4>
+                <div class="circular-container">
+                    <div class="center-item">
+                        <div class="card text-center circular-card">
+                            <div class="card-body">
+                                <i class="fas fa-car fs-1 text-primary"></i>
+                                <h5 class="card-title">车身配接</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 轨道元素 - 数学环形分布 -->
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="开闭件配接">
+                            <div class="card-body text-center">
+                                <i class="fas fa-microchip fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_3.jpg" alt="开闭件配接" class="img-fluid rounded" style="object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="底盘配接">
+                            <div class="card-body text-center">
+                                <i class="fas fa-cogs fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_4.jpg" alt="底盘硬点配接" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="内外饰配接">
+                            <div class="card-body text-center">
+                                <i class="fas fa-chair fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_5.jpg" alt="座椅配接" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="座椅配接">
+                            <div class="card-body text-center">
+                                <i class="fas fa-paint-brush fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_6.jpg" alt="座椅配接" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="电器配接">
+                            <div class="card-body text-center">
+                                <i class="fas fa-tools fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_7.jpg" alt="车身结构" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+        <!-- 整体性能 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="scenario-category">
+                <h4 class="text-center text-dark mb-3">整体性能</h4>
+                <div class="circular-container">
+                    <div class="center-item">
+                        <div class="card text-center circular-card">
+                            <div class="card-body">
+                                <i class="fas fa-tachometer-alt fs-1 text-primary"></i>
+                                <h5 class="card-title">整体性能</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 轨道元素 -->
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="车身弯曲刚度">
+                            <div class="card-body text-center">
+                                <i class="fas fa-arrows-alt-v fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_9.gif" alt="车身弯曲刚度" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="车身扭转刚度">
+                            <div class="card-body text-center">
+                                <i class="fas fa-sync-alt fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_8.gif" alt="车身扭转刚度" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="车身静强度">
+                            <div class="card-body text-center">
+                                <i class="fas fa-shield-alt fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_11.gif" alt="车身静强度" class="img-fluid rounded">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="车身疲劳损伤">
+                            <div class="card-body text-center">
+                                <i class="fas fa-chart-line fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_10.gif" alt="车身疲劳损伤" class="img-fluid rounded">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-            
+        
+        <!-- 用户感知性能 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="scenario-category">
+                <h4 class="text-center text-dark mb-3">用户感知性能</h4>
+                <div class="circular-container">
+                    <div class="center-item">
+                        <div class="card text-center circular-card">
+                            <div class="card-body">
+                                <i class="fas fa-cogs fs-1 text-primary"></i>
+                                <h5 class="card-title">用户感知</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 轨道元素 -->
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="外覆盖件抗凹">
+                            <div class="card-body text-center">
+                                <i class="fas fa-volume-up fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_12.png" alt="外覆盖件抗凹" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="顶棚拉手">
+                            <div class="card-body text-center">
+                                <i class="fas fa-hand-paper fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_13.png" alt="操作便利性" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>            
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="制动踏板">
+                            <div class="card-body text-center">
+                                <i class="fas fa-thermometer-half fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_14.png" alt="热舒适性" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 用户使用性能 -->
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <div class="scenario-category">
+                <h4 class="text-center text-dark mb-3">用户使用性能</h4>
+                <div class="circular-container">
+                    <div class="center-item">
+                        <div class="card text-center circular-card">
+                            <div class="card-body">
+                                <i class="fas fa-user-cog fs-1 text-primary"></i>
+                                <h5 class="card-title">用户使用</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 轨道元素 -->
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="举升强度">
+                            <div class="card-body text-center">
+                                <i class="fas fa-tools fs-4 text-primary"></i>
+                                <img src="../static/images/durability_simulation_15.jpg" alt="举升强度" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="千斤顶顶升">
+                            <div class="card-body text-center">
+                                <i class="fas fa-weight-hanging icon-medium" style="color: #667eea;"></i>
+                                <img src="../static/images/durability_simulation_18.png" alt="千斤顶顶升" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="行李架">
+                            <div class="card-body text-center">
+                                <i class="fas fa-luggage-cart icon-medium" style="color: #667eea;"></i>
+                                <img src="../static/images/durability_simulation_16.png" alt="行李架" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="牵引装置">
+                            <div class="card-body text-center">
+                                <i class="fas fa-link icon-medium" style="color: #667eea;"></i>
+                                <img src="../static/images/durability_simulation_19.png" alt="牵引装置" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="orbit-item">
+                        <div class="card circular-card" data-bs-toggle="tooltip" data-bs-placement="top" title="拖车装置">
+                            <div class="card-body text-center">
+                                <i class="fas fa-trailer icon-medium" style="color: #667eea;"></i>
+                                <img src="../static/images/durability_simulation_17.png" alt="拖车装置" class="img-fluid rounded" style="height: 80px; object-fit: cover;">
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
     </div>
+            
+
     
 
     <!-- 技术栈 -->
@@ -732,10 +732,10 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../static/js/jquery-3.6.0.min.js"></script>
     
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
     
     
 <script>
