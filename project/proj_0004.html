@@ -11,154 +11,101 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
     <style>
-        .hero-section {
+        .project-header {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 100px 0;
+            padding: 80px 0;
         }
-        .project-card {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            height: 100%;
+        
+        .project-content {
+            padding: 60px 0;
         }
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        
+        .section-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            overflow: hidden;
         }
-        .achievement-item {
-            border-left: 4px solid #007bff;
-            padding-left: 15px;
+        
+        .section-header {
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            padding: 25px 30px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .section-body {
+            padding: 30px;
+        }
+        
+        .tech-badge {
+            background: linear-gradient(45deg, #007bff, #0056b3);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 5px;
+            display: inline-block;
+        }
+        
+        .metric-card {
+            background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin: 10px 0;
+        }
+        
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 5px;
+        }
+        
+        .metric-label {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .achievement-item-before {
+            border-left: 4px solid #27a344;
+            padding-left: 20px;
             margin-bottom: 15px;
+            background: gray;
+            padding: 15px;
+            border-radius: 5px;
         }
+        .achievement-item-after {
+            border-left: 4px solid #27a344;
+            padding-left: 20px;
+            margin-bottom: 15px;
+            background: #f8fff9;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
         .media-gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 20px;
             margin-top: 20px;
         }
+        
         .media-item {
-            position: relative;
-            overflow: hidden;
             border-radius: 10px;
+            overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
+        
         .media-item img, .media-item video {
             width: 100%;
-            height: 250px;
+            height: 200px;
             object-fit: cover;
         }
-        .company-section {
-            margin-bottom: 60px;
-        }
-        .company-header {
-            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
-            padding: 30px;
-            border-radius: 15px;
-            margin-bottom: 30px;
-        }
-        .stats-card {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin-bottom: 20px;
-        }
-        .stats-number {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #007bff;
-        }
     </style>
-    
-    
-<style>
-    .project-header {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        padding: 80px 0;
-    }
-    
-    .project-content {
-        padding: 60px 0;
-    }
-    
-    .section-card {
-        background: white;
-        border-radius: 15px;
-        box-shadow: 0 5px 25px rgba(0,0,0,0.1);
-        margin-bottom: 30px;
-        overflow: hidden;
-    }
-    
-    .section-header {
-        background: linear-gradient(45deg, #f8f9fa, #e9ecef);
-        padding: 25px 30px;
-        border-bottom: 1px solid #dee2e6;
-    }
-    
-    .section-body {
-        padding: 30px;
-    }
-    
-    .tech-badge {
-        background: linear-gradient(45deg, #007bff, #0056b3);
-        color: white;
-        padding: 8px 15px;
-        border-radius: 20px;
-        font-size: 0.9rem;
-        margin: 5px;
-        display: inline-block;
-    }
-    
-    .metric-card {
-        background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-        border: 1px solid #dee2e6;
-        border-radius: 10px;
-        padding: 20px;
-        text-align: center;
-        margin: 10px 0;
-    }
-    
-    .metric-value {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #007bff;
-        margin-bottom: 5px;
-    }
-    
-    .metric-label {
-        color: #6c757d;
-        font-size: 0.9rem;
-    }
-    
-    .achievement-item {
-        border-left: 4px solid #28a745;
-        padding-left: 20px;
-        margin-bottom: 15px;
-        background: #f8fff9;
-        padding: 15px;
-        border-radius: 5px;
-    }
-    
-    .media-gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        margin-top: 20px;
-    }
-    
-    .media-item {
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    
-    .media-item img, .media-item video {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-    }
-</style>
 
 </head>
 <body>
@@ -230,14 +177,14 @@
             <div class="col-12">
                 <div class="section-card">
                     <div class="section-header">
-                        <h3 class="mb-0 text-black"><i class="bi bi-gear-fill me-2"></i>模型建模优化案例</h3>
+                        <h3 class="mb-0 text-black"><i class="bi bi-gear-fill me-2"></i>模型建模优化——案例1</h3>
                     </div>
                     <div class="section-body">
                         <!-- 案例概述 -->
                         <div class="row mb-4">
                             <div class="col-12">
                                 <h4 class="text-primary">案例背景</h4>
-                                <p class="lead">针对某车型底盘结构进行建模优化，通过改进建模方法和参数设置，显著提升仿真精度和计算效率。</p>
+                                <p class="lead text-black">路试耐久车尾门铰链位置发生焊点疲劳开裂，使用已有仿真方法及模型无法复现</p>
                             </div>
                         </div>
 
@@ -269,43 +216,43 @@
                                 <h4 class="text-primary">优化细节</h4>
                                 <div class="row">
                                     <div class="col-md-6">
-                                        <div class="text-center">
+                                        <div class="text-center mb-2">
                                             <span class="text-black">优化前</span>
                                         </div>
-                                        <div class="achievement-item">
-                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门建模方式</h5>
+                                        <div class="achievement-item-before ">
+                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-white me-2"></i>尾门建模方式</h5>
                                             <p class="mb-0 text-black">质量点(质量+转动惯量)</p>
                                         </div>
-                                        <div class="achievement-item">
-                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门与车身铰链链接</h5>
+                                        <div class="achievement-item-before">
+                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-white me-2"></i>尾门与车身铰链链接</h5>
                                             <p class="mb-0 text-black">RBE2刚性连接</p>
                                         </div>
-                                        <div class="achievement-item">
-                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门与车身缓冲块接触</h5>
+                                        <div class="achievement-item-before">
+                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-white me-2"></i>尾门与车身缓冲块接触</h5>
                                             <p class="mb-0 text-black">无建模</p>
                                         </div>
-                                        <div class="achievement-item">
-                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门与车身锁扣接触</h5>
+                                        <div class="achievement-item-before">
+                                            <h5 class="text-black"><i class="bi bi-check-circle-fill text-white me-2"></i>尾门与车身锁扣接触</h5>
                                             <p class="mb-0 text-black">无建模</p>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <div class="text-center">
+                                        <div class="text-center mb-2">
                                             <span class="text-black">优化后</span>
                                         </div>
-                                        <div class="achievement-item">
+                                        <div class="achievement-item-after">
                                             <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门建模方式</h5>
                                             <p class="mb-0 text-black">采用网格建模替代质量点</p>
                                         </div>
-                                        <div class="achievement-item">
+                                        <div class="achievement-item-after">
                                             <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门与车身铰链链接</h5>
                                             <p class="mb-0 text-black">释放螺栓转动自由度</p>
                                         </div>
-                                        <div class="achievement-item">
+                                        <div class="achievement-item-after">
                                             <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门与车身缓冲块接触</h5>
                                             <p class="mb-0 text-black">通过弹簧单元模拟各向异性的橡胶接触刚度</p>
                                         </div>
-                                        <div class="achievement-item">
+                                        <div class="achievement-item-after">
                                             <h5 class="text-black"><i class="bi bi-check-circle-fill text-success me-2"></i>尾门与车身锁扣接触</h5>
                                             <p class="mb-0 text-black">通过弹簧单元模拟接触两个方向的刚度</p>
                                         </div>
